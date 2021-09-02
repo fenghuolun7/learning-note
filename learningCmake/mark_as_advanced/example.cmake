@@ -1,0 +1,5 @@
+set(FOO "/usr" CACHE STRING INTERNAL FORCE)
+MESSAGE( STATUS "the value of FOO is  ${FOO}.")
+set(BAR "/usr" CACHE STRING INTERNAL FORCE)
+mark_as_advanced(FORCE BAR)
+MESSAGE( STATUS "the value of BAR is  ${BAR}.")
